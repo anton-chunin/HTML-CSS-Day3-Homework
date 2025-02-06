@@ -13,7 +13,7 @@ body{
 
 .page{
     width: 75%;
-    margin: 35px auto;
+    margin: 25px auto;
     
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -51,9 +51,10 @@ body{
 h2{
     font-size: 20px;
     font-weight: 500;
-    line-height: 27px;
+    line-height: 24px;
     margin: 20px 0;
     z-index: 1;
+    color: white;
 }
 
 p{
@@ -63,6 +64,7 @@ p{
 
 .name-info p:first-child{
     font-weight: 500;
+    color: white;
 }
 
 .name-info p:last-child{
@@ -88,11 +90,6 @@ p{
     background-color: hsl(0, 0%, 100%);
 }
 
-.card:nth-child(3) h2{
-    padding-right: 0.3rem;
-    margin-bottom: 1.5rem;
-}
-
 .card:nth-child(4){
     grid-column: 2/4;
     grid-row: 2/3;
@@ -105,10 +102,17 @@ p{
     background-color: hsl(0, 0%, 100%);
 }
 
-.card:nth-child(3), .card:nth-last-child(1){
-    color: hsl(217, 19%, 35%);
+/* карточка 1,2,4, цвет текста*/
+.card:nth-child(1), .card:nth-child(2), .card:nth-child(4){
+    color: rgb(173, 185, 201);
 }
 
-.card:nth-child(1), .card:nth-child(2), .card:nth-child(4){
-    color: hsl(0, 0%, 81%);
+/* карточка 3 и 5, цвет заголовока h2 текста*/
+.card:nth-child(3) h2, .card:nth-last-child(1) h2{
+    color: black;
+}
+
+/* карточка 3 и 5, цвет текста*/
+.card:nth-child(3), .card:nth-last-child(1){
+    color: hsl(0, 0%, 50%);
 }
