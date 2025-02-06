@@ -67,7 +67,7 @@ p{
 }
 
 .name-info p:last-child{
-    opacity: 0.8;
+    opacity: 0.6;
     position: relative;
 }
 
@@ -109,7 +109,7 @@ p{
 /* карточка 3 и 5, цвет заголовока h2*/
 .card:nth-child(3) h2, .card:nth-last-child(1) h2{
     color: hsl(219, 19%, 24%);
-    /* color: black; */
+    font-weight: 600;
 }
 
 /* карточка 3 и 5, цвет текста*/
@@ -117,7 +117,7 @@ p{
     color: hsl(217, 19%, 35%);
 }
 
-/* карточка */
+/* карточка 3 и 5, цвет имени*/
 .card:nth-child(3) p:first-child, .card:last-child p:first-child{
     color: black;
 }
