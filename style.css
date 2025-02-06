@@ -13,7 +13,7 @@ body{
 
 .page{
     width: 75%;
-    margin: 25px auto;
+    margin: 32px auto;
     
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -23,9 +23,8 @@ body{
 
 .card{
     border-radius: 10px;
-    padding: 25px 35px;
-    color: white;
-    box-shadow: 10px 18px 10px rgba(150, 150, 150, 0.1);
+    padding: 20px 30px;
+    box-shadow: 15px 18px 10px rgba(150, 150, 150, 0.1);
     z-index: -1;
 }
 
@@ -38,7 +37,7 @@ body{
 
 .card .photo{
     border-radius: 50%;
-    width: 35px;
+    width: 32px;
     border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -58,8 +57,8 @@ h2{
 }
 
 p{
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.85rem;
+    line-height: 1.5;
 }
 
 .name-info p:first-child{
@@ -68,7 +67,7 @@ p{
 }
 
 .name-info p:last-child{
-    opacity: 0.5;
+    opacity: 0.8;
     position: relative;
 }
 
@@ -104,15 +103,31 @@ p{
 
 /* карточка 1,2,4, цвет текста*/
 .card:nth-child(1), .card:nth-child(2), .card:nth-child(4){
-    color: rgb(173, 185, 201);
+    color: rgb(201, 201, 201);
 }
 
-/* карточка 3 и 5, цвет заголовока h2 текста*/
+/* карточка 3 и 5, цвет заголовока h2*/
 .card:nth-child(3) h2, .card:nth-last-child(1) h2{
-    color: black;
+    color: hsl(219, 19%, 24%);
+    /* color: black; */
 }
 
 /* карточка 3 и 5, цвет текста*/
 .card:nth-child(3), .card:nth-last-child(1){
-    color: hsl(0, 0%, 50%);
+    color: hsl(217, 19%, 35%);
+}
+
+/* карточка */
+.card:nth-child(3) p:first-child, .card:last-child p:first-child{
+    color: black;
+}
+
+
+.attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
 }
